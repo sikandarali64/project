@@ -1,50 +1,66 @@
-# Project Repository
+# 🚀 ServiceIQ Pro - AI-Powered Smart Service Management
 
-A general project repository for various development experiments, prototypes, and learning purposes.
+ServiceIQ Pro is a state-of-the-art service dispatch and management platform designed for modern workforce optimization. It leverages an **AI Decision Engine** to instantly match service requests with the most qualified, highest-rated, and closest available professionals.
 
-## 📖 Description
+![ServiceIQ Pro Hero](https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2070)
 
-This repository serves as a workspace for:
-- Development experiments
-- Code prototypes
-- Learning new technologies
-- Quick projects
-- Code snippets
+## ✨ Features
 
-## 🛠️ Technologies
+- **🧠 AI Decision Engine**: Uses a sophisticated scoring algorithm to auto-assign jobs based on:
+    - Skill Match Accuracy (30%)
+    - Proximity/Distance (40%)
+    - Professional Rating (20%)
+    - Real-time Availability (10%)
+- **🛡️ Command Center (Admin Dashboard)**: Monitor system metrics, view live job statuses, and simulate emergency incidents to see the AI in action.
+- **📱 Instant Request (Customer App)**: Intuitive interface for customers to request services and track their assigned professional in real-time.
+- **💼 Active Dispatch (Worker App)**: Streamlined dashboard for service professionals to manage their availability and mark jobs as completed.
+- **⚡ Real-time Updates**: Polling-based live data synchronization for a seamless, "live" experience.
 
-Technologies may vary depending on the project branch or folder:
-- Programming languages: Multiple
-- Frameworks: Various
-- Tools: Standard development tools
+## 🛠️ Technology Stack
 
-## 📁 Structure
-
-```
-├── README.md
-├── src/
-├── docs/
-└── examples/
-```
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React 19, Vite, Tailwind CSS 4, Framer Motion |
+| **Charts** | Recharts |
+| **Icons** | Lucide React |
+| **Backend** | Node.js, Express 5 |
+| **API** | Axios |
 
 ## 🚀 Getting Started
 
-1. Clone the repository
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm
+
+### Installation
+
+Clone the repository and install all dependencies:
+
 ```bash
-git clone https://github.com/sikandarali64/project.git
-cd project
+npm run install-all
 ```
 
-2. Follow specific project instructions
+### Running the Application
 
-## 📝 Contents
+To start both the frontend and backend simultaneously:
 
-Check individual project folders for specific README files and documentation.
+```bash
+npm run dev
+```
 
-## 👨‍💻 Author
+The application will be available at:
+- **Frontend**: `http://localhost:5173`
+- **Backend API**: `http://localhost:5000/api`
 
-**Sikandar Ali** - [@sikandarali64](https://github.com/sikandarali64)
+## 📊 AI Scoring Algorithm
 
-## 📄 License
+The AI assigns jobs using the following formula:
 
-This project is open source and available under the MIT License.
+$$Score = (\frac{1}{Distance} \times 40) + (SkillMatch \times 30) + (Rating \times 20) + (Availability \times 10)$$
+
+The highest-scoring professional who is currently available is automatically dispatched.
+
+---
+
+Built with ❤️ for the Hackathon 2026.
